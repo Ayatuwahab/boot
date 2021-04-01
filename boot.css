@@ -1,0 +1,339 @@
+@import "library/library/Resources/art ext css/ea1written.css";
+@import "library/library/Resources/icons and animate/animate.css";
+/*General Styles*/
+*{
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+body{
+	margin: 0;
+    padding: 0;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 30px;
+	font-family: informal roman;
+	color: #222222;
+	text-transform: uppercase;
+}
+ul,
+nav {
+	list-style: none;
+}
+
+i {
+	color: cadetblue;
+	margin-right: 6px;
+}
+h2{
+    font-weight: 700;
+    line-height: 1.25;
+}
+p{
+	text-align: center;
+	color: #212b35;
+}
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 1;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+section:not(.contact):nth-child(even) {
+	background-color: #478484;
+}
+section h3.title {
+	text-transform: capitalize;
+	font: bold 32px  Microsoft Sans Serif;
+	margin-bottom: 30px;
+	text-align: center;
+}
+section p {
+	max-width: 775Px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.btn:hover{
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    background-color: #212b35;
+    color: #ffffff;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.25)
+}
+.btn:active{
+border-color: #000639;
+}
+a.btn {
+	display: inline-block;
+    padding: 1.0625em 1.875em;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+	background-color: #212b35;
+	opacity: 1;
+    font-size: 1em;
+    line-height: 1.133;
+    -webkit-font-smoothing: antialiased;
+    transition: 150ms ease;
+    transition-property: background-color, border-color, box-shadow, color;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Header Style*/
+header {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #fff;
+}
+ @keyframes fadein {
+ 	100% {
+ 		opacity: 1;
+ 	}
+ }
+
+
+
+
+header h2 {
+	font: Microsoft Sans Serif, Nirmala UI Semilight;
+}
+
+header nav {
+	display: flex;
+	margin-right: -15px;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+.contact {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.contact .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+.contact h1 {
+	font: bold 60px  Microsoft Sans Serif; 
+}
+
+.contact h3 {
+	font: normal 28px  Microsoft Sans Serif;
+	margin-bottom: 40px;
+}
+
+.contact a.btn {
+	padding: 20px 46px;
+}
+
+
+.background-image {
+	background-image: url(Office.jpeg);
+}
+/* form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 40%;
+} */
+
+.contact form .btn {
+	padding: 18px 42px;
+}
+
+.contact form input {
+	padding: 15px;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+	flex: 1;
+	box-shadow: 0 0 0 1px #c4cdd5;
+    border: 0;
+    border-radius: 5px; 
+}
+.testimonial .quote {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 40px 0 25px;
+}
+
+	/*Middle Styles*/
+.section-2-container{
+	margin-top: 200px;
+    width: 100%;
+    position: relative;
+    float: left;
+     	background: #fff;
+}
+.sub-section-2-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: -180px;
+    background: #fff;
+}
+.loans-terms-card{
+    width: 280px;
+    color: #222;
+    height: 280px;
+    background: #fff;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.3);
+}
+.icon-section-2{
+    font-size: 45px;
+    /* color: #047496; */
+    margin-top: 50px;
+    /*margin-left: 100px;*/
+
+}
+.loans-terms-card-details{
+    width: 95%;
+    margin-left: 2.5%;
+    font-family: ea1art;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    line-height: 2;
+}
+.loan-title{
+    font-size: 19px;
+    margin-top: 16px;
+    color: #047496;
+    width: 80%;
+    margin-left: 10%;
+    font-family: arial;
+}
+.center{
+    text-align: center;
+}
+/*Icon Styles*/
+.col-12{
+    width: 100%;
+    position: relative;
+    float: left;
+}
+.partner{
+    width: 100%;
+    position: relative;
+    float: left;
+   
+}
+.partner-card{
+    width: 100%;
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    	background-color: #fff;
+}
+.sub-prtner-card{
+    width: 750px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+cite{
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.04375em;
+ font: normal 16px Segoe UI Emoji;
+  color: #555;
+  line-height: 1.2142857143;
+}
+/*hero Styles*/
+
+.hero form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 60%;
+}
+
+.hero form .btn {
+	padding: 18px 42px;
+}
+
+.hero form  {
+	padding: 15px;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #FFF;
+	flex: 1; 
+}
+.hero p {
+	color: #fff;
+}
+.hero h3 {
+	color: #111111;
+}
+/*Footer Style*/
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #474747;
+	color: #fff;
+	padding: 20px 0;
+}
+footer i {
+	color: #ffffff;
+}
+footer ul {
+	display: flex;
+}
+
+footer ul li {
+	margin-left: 16px;
+}
+
+footer p {
+text-transform: uppercase;
+font-size: 14px;
+opacity: 0.6;
+align-self: center;
+color: #fff;
+}
+/*loader*/
